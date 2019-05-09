@@ -1,0 +1,28 @@
+{
+  "name": "tennu-thesaurize",
+  "version": "1.0.0",
+  "description": "A plugin for the Tennu IRC framework. Thesaurize text in previous messages.",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorioBerra/tennu-thesaurize.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "eslint .",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "author": "Victorio Berra",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "split-fwd-slash": "^1.0.1",
+    "tennu-queue-handler": "^1.0.0",
+    "thesaurize": "^1.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
+  }
+}

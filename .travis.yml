@@ -1,0 +1,8 @@
+sudo: false
+language: node_js
+node_js:
+  - "stable"
+before_install: 
+    - 'if [ "${TRAVIS_NODE_VERSION}" == "0.10" ]; then npm install -g npm@2 ; fi'
+notifications:
+  irc: "irc.GameSurge.Net#tennudev"
